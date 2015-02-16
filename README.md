@@ -1,4 +1,4 @@
-##Git repository for Resume - LaTeX formatting
+###Git repository for Resume - LaTeX formatting
 
 * Fonts used - Lato and Raleway
 
