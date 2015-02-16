@@ -7,5 +7,5 @@ all :
 	evince resume.pdf
 
 clean :
-	ls | grep -v .tex | grep -v .pdf | grep -v Makefile | grep -v .zip | grep -v .cls | grep -v fonts | grep -v README.md | xargs rm -rf
+	ls | grep -v .tex | grep -v .pdf | grep -v Makefile | grep -v .zip | grep -v .cls | grep -v fonts | grep -v README.md | grep -v linkedin | grep -v github | xargs rm -rf
 	rm -rf *.tex.project.vim
