@@ -1,4 +1,4 @@
-" ATP project vim script: Sun Feb 15, 2015 at 09:44 PM +0530.
+" ATP project vim script: Mon Mar 09, 2015 at 11:29 AM +0530.
 
 let b:atp_MainFile = 'resume.tex'
 let g:atp_mapNn = 0
