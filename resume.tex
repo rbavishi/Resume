@@ -13,7 +13,7 @@
 
 
 \namesection{Rohan}{Bavishi}{ 
-\href{mailto:rbavishi@iitk.ac.in}{rbavishi@iitk.ac.in} | \color{subheadings}\small+91-77-528-46562 
+  \color{subheadings} Third-Year Undergraduate, \ IIT Kanpur | \href{mailto:rbavishi@iitk.ac.in}{rbavishi@iitk.ac.in} | \color{subheadings}\small+91-77-528-46562 
 }
 
 %----------------------------------------------------------------------------------------
@@ -39,10 +39,41 @@ A-302, Hall-2, IIT Kanpur\\Kanpur, Uttar Pradesh\\\\
 \vspace{2ex}
 
 %------------------------------------------------
+% Research Interests 
+%------------------------------------------------
+
+\section{Research Interests}
+%\begin{tabular}{lp{1cm}}
+  \location{Program Analysis \& Verification}
+  \location{Program Synthesis}
+  \location{Compiler Optimizations}
+%\multicolumn{2}{c}{} \\ \\
+%\end{tabular}
+\sectionspace % Some whitespace after the section
+\vspace{-2ex}
+\rule{5cm}{0.5pt}
+\vspace{2ex}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Research-Relevant Skills}
+\location{Source Code Knowledge:}
+Expert: CBMC \textbullet{} Intermediate: Z3\\\vspace{1em}
+\location{API Knowledge:}
+Proficient: MathSAT | MiniSAT
+\sectionspace % Some whitespace after the section
+\vspace{-1.5ex}
+\rule{5cm}{0.5pt}
+\vspace{2ex}
+
+
+%------------------------------------------------
 % Coursework
 %------------------------------------------------
 
-\section{Coursework | Grade}
+\section{Relevant Coursework}
 \begin{tabular}{lp{1cm}}
 Fundamentals of Computing \\
 Data Structures \& Algorithms \\
@@ -53,29 +84,30 @@ Mathematics - Linear Algebra \\
 Logic for Computer Science \\
 Abstract Algebra \\
 Computer Organisation \\
+Operating Systems \\
+Theory of Computation \\
+Advanced Algorithms \\
 \multicolumn{2}{c}{} \\ \\
 \end{tabular}
 %\footnotesize * - Completed by April 2015
-\\\vspace{0.5ex}
-\runsubsection{\footnotesize Complete Transcript | } \href{https://drive.google.com/file/d/0B0--s-r8CTxgRHdGMm1iRnQxelU/view}{Link}
+\\
 \sectionspace % Some whitespace after the section
-\vspace{-1ex}
+\vspace{-4.5ex}
 \rule{5cm}{0.5pt}
 \vspace{2ex}
+
 %------------------------------------------------
 % Skills
 %------------------------------------------------
 
-\section{Skills}
+\section{Programming Skills}
 
 
-\location{Proficient:}
-C \textbullet{} C++ \textbullet{} Python \textbullet{} \LaTeX \textbullet{} Bash \textbullet{} HTML\\
-Git \textbullet{} Icarus Verilog \\
-\location{Familiar:}
-Java \textbullet{} JavaScript \textbullet{} Android\\
-\location{Softwares:}
-Photoshop \textbullet{} MATLAB
+%\location{Proficient:}
+C \textbullet{} C++ \textbullet{} Python \textbullet{} \LaTeX \textbullet{} Bash \\
+HTML \textbullet{} Verilog \\
+%\location{Familiar:}
+%Java \textbullet{} JavaScript \textbullet{} Android\\
 \sectionspace % Some whitespace after the section
 \vspace{-1.5ex}
 \rule{5cm}{0.5pt}
@@ -85,7 +117,7 @@ Photoshop \textbullet{} MATLAB
 %Programming Activities
 %------------------------------------------------
 
-\section{Programming Activities}
+\section{Competitive Programming}
 \runsubsection{SPOJ}\\\vspace{0.5ex}
 \small\uppercase {Solved: }\href{http://www.spoj.com/users/rbavishi/}{144} | \uppercase{World Rank: 870}\\
 \vspace{2ex}
@@ -100,16 +132,16 @@ Photoshop \textbullet{} MATLAB
 %POR
 %-------------------------------------------------
 
-\section{Positions of Responsibility}
-\runsubsection{Academic Mentor}\\
-\descript{Counselling Service}\vspace{1ex}
-\footnotesize \textbullet{} Helping academically weaker students with coursework by organizing quizzes and doubt-sessions\\
-\vspace{3ex}
-\runsubsection{Secretary}\\
-\descript{Quiz Club,  IIT Kanpur}\vspace{1ex}
-\footnotesize \textbullet{} Organising and participating in quizzes of various genre\\
-\vspace{1ex}
-\rule{5cm}{0.5pt}
+%\section{Positions of Responsibility}
+%\runsubsection{Academic Mentor}\\
+%\descript{Counselling Service}\vspace{1ex}
+%\footnotesize \textbullet{} Helping academically weaker students with coursework by organizing quizzes and doubt-sessions\\
+%\vspace{3ex}
+%\runsubsection{Secretary}\\
+%\descript{Quiz Club,  IIT Kanpur}\vspace{1ex}
+%\footnotesize \textbullet{} Organising and participating in quizzes of various genre\\
+%\vspace{1ex}
+%\rule{5cm}{0.5pt}
 %----------------------------------------------------------------------------------------
 \end{minipage} % The end of the left column
 \hfill
@@ -148,37 +180,54 @@ Photoshop \textbullet{} MATLAB
 \descript{| Modern School, Nagpur}
 \location{May 2011 | Aggregate : 96.4\%}
 \sectionspace % Some whitespace after the section
-\rule{12cm}{0.5pt}\vspace{3ex}
+\vspace{-1ex}
+\rule{12cm}{0.5pt}\vspace{2ex}
 %------------------------------------------------
 % Projects
 %------------------------------------------------
+\section{Research Projects}
+\runsubsection{Fault localization using Craig Interpolants}\\\vspace{1.5ex}
+\location{July 2015 - Ongoing | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | \footnotesize{(Source will be released after publication)}}\vspace{0.5em}
+Ongoing research project in fault localization, using the \href{http://www.cprover.org/cbmc/}{CBMC} model checker, coupled with interpolation procedures from the \href{http://mathsat.fbk.eu/}{MathSAT 5} solver.\vspace{2.5ex}
+\footnotesize {
+\begin{tightitemize}
+\item Modified major sections of CBMC to accomodate trace formula generation for test-cases. 
+\item Added significant number of modules in CBMC for efficient interaction with the MathSAT interpolation engine.
+\item Developed a working version of the state-of-the-art fault localization tool \href{http://bugassist.mpi-sws.org/}{BugAssist} for comparision. Quality of our tool's fault localization results is higher as compared to BugAssist.
+\end{tightitemize}
+}
+\sectionspace % Some whitespace after the section
+\vspace{2ex}
+\runsubsection{DirectFix Implementation in CBMC}\\\vspace{1.1ex}
+\location{May 2015 - July 2015 | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} |
+  \hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.4ex}\href{https://github.com/rbavishi/iCBMC}{Code}}\vspace{0.5ex}
+Implemented the automated repair algorithm described in the \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} publication using the model checker CBMC, and the \href{https://github.com/Z3Prover/z3}{Z3} solver for the MaxSAT formulation.\vspace{2.5ex}
+\footnotesize {
+  \begin{tightitemize}
+  \item Added multiple modules in CBMC to use the trace formula to generate the \href{http://dl.acm.org/citation.cfm?id=1806833}{component based encoding (CBE)} to be passed as an SMT-Lib formula to Z3.
+  \end{tightitemize}
+}
+
+
+\sectionspace
+\rule{12cm}{0.5pt}\vspace{2ex}
+%\vspace{2ex}
 
 \section{Academic Projects}
 
 \runsubsection{Median Algorithms for Disk-Resident Data}\\\vspace{0.5ex}
 
-\location{Aug 2014 – Nov 2014 | Under \href{http://www.cse.iitk.ac.in/users/sbaswana/}{Prof. Surender Baswana} | 
-	\hspace{0.3ex} \includegraphics[scale=0.025]{drive.png} \hspace{0.4ex}\href{https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view}{Report} \hspace{0.3ex}| 
-	\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.4ex}\href{https://github.com/rbavishi/Median-Algorithms-Disk-Resident-Data}{Code}}
+\location{Aug 2014 – Nov 2014 (Second Year) | Under \href{http://www.cse.iitk.ac.in/users/sbaswana/}{Prof. Surender Baswana} | 
+  \hspace{0.3ex} \includegraphics[scale=0.025]{drive.png} \hspace{0.4ex}\href{https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view}{Report} \hspace{0.3ex}}
 
 
 %\location{\hfill \includegraphics[scale=0.05]{github.png} \href{https://github.com/rbavishi/Median-Algorithms-Disk-Resident-Data}{Github Link}\vspace{1ex}}
-Independently developed a 2-pass deterministic and a 2-pass randomized algorithm to find median of large data-sets (1 Terabyte) with performance tests\\\vspace{1ex}
-Deterministic Algorithm :\vspace{1ex}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Independently developed a 2-pass deterministic and a 2-pass randomized algorithm to find median of large data-sets (1 Terabyte) with performance tests. \\\vspace{1ex}
+\vspace{1ex} % Hacky fix for awkward extra vertical space
 \footnotesize {
 \begin{tightitemize}
-\item Similar to the original paper by Munro-Paterson(1980)(\textbf{\href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{Link}})
-\item An $\epsilon$-approximate median ($\epsilon$ = 1/ n) calculated in the first pass, followed by the computation of the exact median in the second
-\end{tightitemize}
-}
-\vspace{2ex}
-\small Randomized Algorithm :\vspace{0.5ex}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\footnotesize{
-\begin{tightitemize}
-\item Basic Random-Sampling techniques using Mersenne-Twister PRNG implemented. Theoretical success probability calculated and compared with the practical performance over thousands of program-runs
-\item Success probability close to 0.6 achieved for medium-sized data-sets (10-50 GB)
+\item Deterministic algorithm similar to the original \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson(1980) - An $\epsilon$-approximate median is calculated in the first pass, followed by the exact median value in the second pass.
+\item Randomized algorithm employed basic random-sampling techniques using Mersenne-Twister PRNG. Success probability close to 0.6 achieved for medium-sized data-sets (10-50 GB)
 \end{tightitemize}
 }
 \sectionspace % Some whitespace after the section
@@ -186,7 +235,7 @@ Deterministic Algorithm :\vspace{1ex}
 %------------------------------------------------
 
 \runsubsection{Peer-to-Peer Dropbox}\\\vspace{0.5ex}
-\location{Aug 2013 – Nov 2013 | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | 
+\location{Aug 2013 – Nov 2013 (First Year) | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy} | 
 	\hspace{0.3ex}\includegraphics[scale=0.05]{github.png} \hspace{0.15ex} \href{https://github.com/rbavishi/P2P-Dropbox}{P2P Dropbox}}\vspace{1ex}
 
 A Linux application for back-up and syncing of files between two or more peers
@@ -194,37 +243,23 @@ A Linux application for back-up and syncing of files between two or more peers
 \footnotesize{
 \begin{tightitemize}
 \item Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices
-\item Linux \href{http://man7.org/linux/man-pages/man7/inotify.7.html}{\textbf{inotify}} API used to track changes in the shared folder
-\item \href{http://linux.about.com/library/cmd/blcmdl1_rsync.htm}{rsync} used to sync changes in files/folders to ensure efficient transfer
-\item Multithreading with mutexes used to parallelize syncing operations
-\item Retry mechanisms and network detection system to ensure syncing even in networks with inter-mittent connectivity
-\item Command-Line-Interface to add/delete folders and show synchronization status
-\end{tightitemize}
-}
-\sectionspace % Some whitespace after the section
-\vspace{2ex}
-\runsubsection{Frama-C Program Verification}\\
-\location{Jan 2014 - March 2014 | Under \href{http://www.cse.iitk.ac.in/users/subhajit/}{Prof. Subhajit Roy}}\vspace{1ex}
-A reading/implementation project to verify program modules using \href{http://frama-c.com/}{Frama-C}
-\vspace{\topsep}
-\footnotesize{
-\begin{tightitemize}
-\item Verified several common programs using \href{frama-c.com/acsl.html}{ACSL} language specification such as sorting/searching, median-finding, k th order statistic etc
-\item Proved formal properties of common implementations like bubble-sort using the \href{krakatoa.lri.fr/jessie.pdf}{Jessie} plugin for deductive verification
+\item Linux \href{http://man7.org/linux/man-pages/man7/inotify.7.html}{\textbf{inotify}} API used to track changes in the shared folder and \href{http://linux.about.com/library/cmd/blcmdl1_rsync.htm}{rsync} used to sync the modifications to ensure efficient transfer
+\item Multithreading with mutexes used to parallelize syncing and file-monitoring operations
 \end{tightitemize}
 }
 \sectionspace
-\vspace{2ex}
+\vspace{0.1ex}
 \rule{12cm}{0.5pt}
 
 %------------------------------------------------
 % Awards
 %------------------------------------------------
-\vspace{3.9ex}
+\vspace{1.5ex}
 \section{Awards \& Achievements} 
 \vspace{\topsep}
 \small{
 \begin{tightitemize}
+\item Academic Excellence Award 2013-2014\\
 \item Secured an All-India-Rank of 202 in JEE Advanced 2013 amongst 150,000 candidates\\
 \item Secured an All-India-Rank of 175 in JEE Mains 2013 amongst 20,00,000 candidates\\
 \item Secured an All-India-Rank of 33 in AMTI - Mathematics Olympiad 2013\\
@@ -232,7 +267,7 @@ A reading/implementation project to verify program modules using \href{http://fr
 \end{tightitemize}
 }
 \sectionspace % Some whitespace after the section
-\vspace{2ex}
+\vspace{0.1ex}
 \rule{12cm}{0.25pt}
 \end{minipage} % The end of the right column
 %----------------------------------------------------------------------------------------
