@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=0.75cm, vmargin=0.60cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.20cm, vmargin=0.6cm]{geometry} % Specifies horizontal and vertical page margins
 
 \usepackage{hyperref} 
 
@@ -23,6 +23,7 @@
 \definecolor{date}{HTML}{666666} % The color used for the Last Updated text at the top right
 \definecolor{primary}{rgb}{0.35,0.35,0.35} %Color for primary text.
 \definecolor{linkcolour}{rgb}{0.25,0.25,0.6} %Color used for href links
+\definecolor{lightline}{rgb}{0.73, 0.73, 0.73}
 
 
 %--1--------------------------------------------------------------------------------------
