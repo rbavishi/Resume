@@ -1,0 +1,6 @@
+.latexmk
+*.swp
+*.swo
+*.out
+*.aux
+*.log
