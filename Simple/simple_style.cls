@@ -213,7 +213,7 @@
 \usepackage{calc}
 \definecolor{colorlink}{HTML}{006699}
 \definecolor{lightestgray}{HTML}{A9A9A9}
-\definecolor{lightergray}{HTML}{797979}
+\definecolor{lightergray}{HTML}{626262}
 \definecolor{lightgray}{HTML}{595959}
 \definecolor{midgray}{HTML}{393939}
 \definecolor{darkgray}{HTML}{292929}
@@ -367,7 +367,7 @@
       \textwidth=\sectionwidth
       \raggedright	% you don't want this filled out to the right margin
       \sectionfont
-      \textcolor{lightgray}{#1}\vss		% Go into horizontal mode; do the paragraph; go into 
+      \textcolor{midgray}{#1}\vss		% Go into horizontal mode; do the paragraph; go into 
       				% vertical mode; add some negative glue to give a box of 0pt 
                     % height and depth
     }
@@ -504,6 +504,7 @@
 \def\website#1#2{\def\@website{\href{#1}{#2}}}
 \def\phone#1{\def\@phone{#1}}
 \def\timeline#1{\hfill\textcolor{lightgray}{\textit{#1}}}
+\def\supervisor#1{\hfill\textcolor{midgray}{\textit{#1}}}
 \def\cusemph#1{\textcolor{midgray}{\textbf{#1}}}
 
 \def\@name{}
