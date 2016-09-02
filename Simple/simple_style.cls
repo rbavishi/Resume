@@ -210,19 +210,24 @@
 \newtoks\undefined@token\undefined@token={}
 
 \usepackage{xcolor}
+\usepackage{calc}
 \definecolor{colorlink}{HTML}{006699}
+\definecolor{lightestgray}{HTML}{A9A9A9}
+\definecolor{lightergray}{HTML}{797979}
 \definecolor{lightgray}{HTML}{595959}
+\definecolor{midgray}{HTML}{393939}
+\definecolor{darkgray}{HTML}{292929}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % prints a centered name with the address centered
 % or the two address on opposite sides of the page
 
 \def\@printcentername{\begingroup
-  {\namefont\@name\par}
+  {\namefont\@name\\\\\qualificationfont\@qualification\par}
   \@ifundefined{@addressone}{%
     % do nothing
   }{
-	  \vspace{-8ex}
+	  \vspace{-12ex}
 	  \leavevmode\hbox to 
 	  \textwidth{\hfil\@detailsbox{\@addressone\\
 			               \@emailone\ $|$ \@emailtwo\\
@@ -230,7 +235,7 @@
 				       \@phone\\\\}}\par
   }%
   % Add a horizontal line after name
-  \fullline
+  \color{lightestgray}\fullline
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -238,6 +243,7 @@
 % the page with a hline in between
 
 \def\namefont{\huge\bf}
+\def\qualificationfont{\small\sc}
 \def\detailsfont{\footnotesize}
 \def\@linename{\begingroup
   \def\\{ : }
@@ -280,7 +286,7 @@
 % unless you really understand all of this but it is not
 % hard.  Either way, it can only be executed once
 %
-\def\sectionfont{\bf}
+\def\sectionfont{\large\sc}
 \newdimen\sectionwidth
 \newskip\sectionskip
 \newdimen\resumewidth
@@ -361,7 +367,7 @@
       \textwidth=\sectionwidth
       \raggedright	% you don't want this filled out to the right margin
       \sectionfont
-      #1\vss		% Go into horizontal mode; do the paragraph; go into 
+      \textcolor{lightgray}{#1}\vss		% Go into horizontal mode; do the paragraph; go into 
       				% vertical mode; add some negative glue to give a box of 0pt 
                     % height and depth
     }
@@ -468,14 +474,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % makes a line of width \textwidth starting at -\hoffset
 
-\def\fullline{		% hrules only listen to \hoffset
-  \nointerlineskip	% so I have this code	  
-  \moveleft\hoffset\vbox{\hrule width\textwidth}
-  \nointerlineskip
+\def\fullline{
+  \textcolor{lightergray}{\hspace*{-\hoffset}\rule{\sectionwidth}{2.5pt}}
+  \textcolor{lightestgray}{\hspace*{0pt}\rule{\resumewidth-\sectionwidth}{2.5pt}}
+  \vspace{-3ex}
 }
 
 \def\sectionline{
-  \hspace*{-\hoffset}\rule{\resumewidth}{0.2pt}
+	%\textcolor{lightestgray}{\hspace*{-\hoffset}\rule{\resumewidth}{2.5pt}}
+	\textcolor{lightergray}{\hspace*{-\hoffset}\rule{\sectionwidth}{2.5pt}}
+	\textcolor{lightestgray}{\hspace*{0pt}\rule{\textwidth}{2.5pt}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -490,12 +498,16 @@
 % use this to define your name
 
 \def\name#1{\def\@name{#1}}
+\def\qualification#1{\def\@qualification{#1}}
 \def\emailone#1{\def\@emailone{\href{mailto:#1}{#1}}}
 \def\emailtwo#1{\def\@emailtwo{\href{mailto:#1}{#1}}}
 \def\website#1#2{\def\@website{\href{#1}{#2}}}
 \def\phone#1{\def\@phone{#1}}
+\def\timeline#1{\hfill\textcolor{lightgray}{\textit{#1}}}
+\def\cusemph#1{\textcolor{midgray}{\textbf{#1}}}
 
 \def\@name{}
+\def\@qualification{}
 \def\@emailone{}
 \def\@emailtwo{}
 \def\@website{}
