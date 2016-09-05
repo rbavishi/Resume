@@ -201,6 +201,8 @@
 \ProcessOptions\relax
 
 \nofiles	     % resume's don't need .aux files
+\newlength{\charht}
+\AtBeginDocument{\setlength{\charht}{\fontcharht\font`X}}
 
 
 \newtoks\tabular@text		    % holds the current list being processed
@@ -211,6 +213,8 @@
 
 \usepackage{xcolor}
 \usepackage{calc}
+\usepackage{tabu}
+
 \definecolor{colorlink}{HTML}{006699}
 \definecolor{lightestgray}{HTML}{A9A9A9}
 \definecolor{lightergray}{HTML}{626262}
@@ -227,7 +231,7 @@
   \@ifundefined{@addressone}{%
     % do nothing
   }{
-	  \vspace{-12ex}
+	  \vspace{-14ex}
 	  \leavevmode\hbox to 
 	  \textwidth{\hfil\@detailsbox{\@addressone\\
 			               \@emailone\ $|$ \@emailtwo\\
@@ -494,6 +498,14 @@
 				#1
 			\end{tabular}}}}
 
+\renewcommand{\arraystretch}{1.15}
+\def\@descriptionbox#1{\textcolor{darkgray}{
+			\taburulecolor{lightestgray}	
+			\hspace{1ex}
+			\begin{tabu} to \sectionwidth {p{\textwidth-3ex}}
+				#1
+			\end{tabu}}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % use this to define your name
 
@@ -506,6 +518,7 @@
 \def\timeline#1{\hfill\textcolor{lightgray}{\textit{#1}}}
 \def\supervisor#1{\hfill\textcolor{midgray}{\textit{#1}}}
 \def\cusemph#1{\textcolor{midgray}{\textbf{#1}}}
+\def\describe#1{\small\@descriptionbox{#1}}
 
 \def\@name{}
 \def\@qualification{}
