@@ -73,15 +73,7 @@
 \website{http://home.iitk.ac.in/~rbavishi}{\url{home.iitk.ac.in/~rbavishi}}
 \phone{+91-73-180-18920}
 
-% Note that addresses can be used for other contact information:
-% -phone numbers
-% -email addresses
-% -linked-in profile
-
 \address{C-324, Hall-1\\IIT Kanpur\\Kanpur, Uttar Pradesh, India}
-
-% Uncomment to add a third address
-%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
 %-------------------------------------------------------------------------------
 
 \begin{resume}
@@ -103,99 +95,97 @@
 \par
 Program Analysis and Verification, Automated Debugging and Synthesis, \\Compiler Optimizations, Decision Procedures
 
+%-------------------------------------------------------------------------------
+%      PUBLICATIONS 
+%-------------------------------------------------------------------------------
 \section{Publications}
-\cusemph{Rohan Bavishi}, Awanish Pandey, Subhajit Roy, \textit{To Be Precise : Regression Aware Debugging} \\\cusemph{OOPSLA 2016} (To Appear), Amsterdam, Netherlands
+\cusemph{Rohan Bavishi}, Awanish Pandey, Subhajit Roy, ``To Be Precise : Regression Aware Debugging" to appear in \textit{Proceedings of the 2016 ACM International Conference on Object Oriented Programming Systems Languages \& Applications} (OOPSLA), Amsterdam, Netherlands
 
-\vspace{3ex}
-\section{Research\\Projects}
-\cusemph{New Strategy for analysis of Concurrent Programs via Sequentialization} \\
-\supervisor{Supervisor : Prof. Subhajit Roy}\timeline{Aug '16 - Present}
-\vspace{1ex}
-\\
-\describe{
-	Working with \href{http://users.ecs.soton.ac.uk/gp4/cseq/cseq.html}{CSeq} for code-to-code translation of concurrent into equivalent sequential programs\\
-	Devising solving strategies to reduce verification time on existing backends\\
-}
-\vspace{2ex}\\
-\cusemph{Using Interpolant-Based Proofs to Improve Bug Localization and Repair (Publication)}
-\\
-\supervisor{Supervisor : Prof. Subhajit Roy}\timeline{Jul '15 - Aug '16}
-\vspace{1ex}
-\\
-\describe{
-	A new method to improve quality of bug localizations for a set of given passing and failing test-cases\\
-	Interpolants are constructed from passing tests to derive \emph{soft} roadblocks which discourage localizations which violate these interpolants\\
-	Improvements upto 45\% achieved in the quality of localizations in terms of developer effort involved\\
-	\emph{Paper accepted in OOPSLA, one of the premier peer-reviewed conferences in Programming Languages}
-}
-\vspace{2ex}\\
-\cusemph{Using SAT/QBF-Solvers to Detect Side-Channel Vulnerabilities in Hardware}
-\\
-\supervisor{Supervisors : Prof. Paolo Ienne and Mr. Andrew Becker}\timeline{May '16 - Jul '16}
-\vspace{1ex}
-\\
-\describe{
-	Summer Internship Project at Processor Architecture Laboratory, EPFL, Switzerland\\
-	Studied various side-channel attacks, their mitigation techniques, and formal verification methods to prove their effectiveness\\
-	Developed a QBF-Encoding to verify if a cryptographic circuit is secure against a popular side-channel attack based on fault-injection\\
-	In the process of writing a paper and submitting to a peer-reviewed conference\\
-}
-\vspace{2ex}\\
-\cusemph{A CBMC-based Implementation of DirectFix}
-\\
-\supervisor{Supervisor : Prof. Subhajit Roy}\timeline{May '15 - Jul '15}
-\vspace{1ex}
-\\
-\describe{
-	Ported the algorithm used in \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} to CBMC\\
-	Tried to reproduce the experimental results provided in the paper, and devise further optimizations\\
-}
+\cusemph{Rohan Bavishi}, Awanish Pandey, Subhajit Roy, ``Regression Aware Debugging for Mobile Applications" to appear in \textit{Proceedings of the 1$^{st}$ International Workshop on Mobile Development} (Mobile! 2016, part of SPLASH 2016), Amsterdam, Netherlands
 
 \sectionline
-%-------------------------------------------------------------------------------
-
 %-------------------------------------------------------------------------------
 %       AWARDS & ACHIEVEMENTS	
 %-------------------------------------------------------------------------------
 \section{Awards \& Achievements}
-Secured an All-India-Rank of 202 in JEE Advanced 2013 amongst 150,000 candidates\\
-Secured an All-India-Rank of 175 in JEE Mains 2013 amongst 20,00,000 candidates\\
-Secured an All-India-Rank of 33 in AMTI-Mathematics Olympiad\\
-Academic Excellence Award 2013-14, IIT Kanpur
-
+Awarded the \cusemph{SIGPLAN PAC Scholarship} of \$1500 for paper presentation at \cusemph{OOPSLA '16}\\
+\cusemph{Academic Excellence Award 2013-14}, IIT Kanpur\\
+Secured an \cusemph{All-India-Rank of 202} in JEE Advanced 2013 amongst 150,000 candidates\\
+Secured an \cusemph{All-India-Rank of 175} in JEE Mains 2013 amongst 20,00,000 candidates\\
+Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 \sectionline
 %-------------------------------------------------------------------------------
 
-\newpage
+\section{Research\\Projects}
+\begin{project}
+  \title{New Strategy for analysis of Concurrent Programs via Sequentialization}
+  \supervisor{Supervisor : Prof. Subhajit Roy}
+  \duration{Aug '16 - Present}
+  \description{
+	Working with \href{http://users.ecs.soton.ac.uk/gp4/cseq/cseq.html}{CSeq} for code-to-code translation of concurrent into equivalent sequential programs\\
+	Devising solving strategies to reduce verification time on existing backends\\
+  }
+\end{project}
+\begin{project}
+  \title{Improving Bug Localization Using Interpolant-Based Proofs (Publication)}
+  \supervisor{Supervisor : Prof. Subhajit Roy}
+  \duration{Jul '15 - Aug '16}
+  \description{
+	A new method to improve quality of bug localizations for a set of given passing and failing test-cases\\
+	Interpolants are constructed from passing tests to derive \emph{soft} roadblocks which discourage localizations which violate these interpolants\\
+	Improvements upto 45\% achieved in the quality of localizations in terms of developer effort involved\\
+	\emph{Paper accepted in OOPSLA, one of the premier peer-reviewed conferences in Programming Languages}
+  }
+\end{project}
+\begin{project}
+  \title{Using SAT/QBF-Solvers to Detect Side-Channel Vulnerabilities in Hardware}
+  \supervisor{Supervisors : Prof. Paolo Ienne and Mr. Andrew Becker}
+  \duration{May '16 - Jul '16}
+  \description{
+	Summer Internship Project at Processor Architecture Laboratory, EPFL, Switzerland\\
+	Studied various side-channel attacks, their mitigation techniques, and formal verification methods to prove their effectiveness\\
+	Developed a QBF-Encoding to verify if a cryptographic circuit is secure against a popular side-channel attack based on fault-injection\\
+	In the process of writing a paper and submitting to a peer-reviewed conference\\
+  }
+\end{project}\newpage
+\begin{project}
+  \title{A CBMC-based Implementation of DirectFix}
+  \supervisor{Supervisor : Prof. Subhajit Roy}
+  \duration{May '15 - Jul '15}
+  \description{
+	Ported the algorithm used in \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} to CBMC\\
+	Tried to reproduce the experimental results provided in the paper, and devise further optimizations\\
+  }
+\end{project}
 \sectionline
+%-------------------------------------------------------------------------------
+
 
 %-------------------------------------------------------------------------------
 %	ACADEMIC PROJECTS SECTION
 %-------------------------------------------------------------------------------
 \section{Academic\\Projects}
-\cusemph{Re-Inventing A Median Algorithm for Disk-Resident Data}
-\\
-\supervisor{Supervisor : Prof. Surender Baswana}\timeline{Aug '14 - Nov '14}
-\vspace{1ex}
-\\
-\describe{
+\begin{project}
+\title{Re-Inventing A Median Algorithm for Disk-Resident Data}
+\supervisor{Supervisor : Prof. Surender Baswana}
+\duration{Aug '14 - Nov '14}
+\description{
 	Re-invented a two-pass \textit{deterministic} algorithm to find median of large data-sets (approx. 1 TB)\\
 	The algorithm developed was similar to the original \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson (1980)\\
 	Carried out extensive tests to evaluate the performance of the algorithm
-}\vspace{2ex}
-\\
-\cusemph{Peer-to-Peer Dropbox}
-\\
-\supervisor{Supervisor : Prof. Subhajit Roy}\timeline{Aug '13 - Nov '13}
-\vspace{1ex}
-\\
-\describe{
+}
+\end{project}
+\begin{project}
+\title{Peer-to-Peer Dropbox}
+\supervisor{Supervisor : Prof. Subhajit Roy}
+\duration{Aug '13 - Nov '13}
+\description{
 	A linux application for backing-up and syncing of files between two or more peers\\
 	Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices\\
 	Linux inotify API used to track changes in the shared folder and rsync used to sync the modifications to ensure efficient transfer\\
 	Multithreading with mutexes used to parallelize syncing and file-monitoring operations
 }
-
+\end{project}
 \sectionline
 %-------------------------------------------------------------------------------
 
@@ -203,21 +193,27 @@ Academic Excellence Award 2013-14, IIT Kanpur
 %	COURSE PROJECTS SECTION
 %-------------------------------------------------------------------------------
 \section{Course\\Projects}
-\cusemph{An End-to-End Compiler for Perl-like Language}
-\\
-\supervisor{Course : Compilers $|$ Supervisor : Prof. Subhajit Roy}\timeline{Jan '15 - Apr '15}
-\vspace{1ex}
-\\
-\describe{
+\begin{project}
+\title{An End-to-End Compiler for Perl-like Language}
+\supervisor{Course : Compilers $|$ Supervisor : Prof. Subhajit Roy}
+\duration{Jan '15 - Apr '15}
+\description{
 	Built an end-to-end compiler that takes a subset of the Perl language and outputs MIPS assembly\\
 	Features such as \textit{operator overloading}, \textit{dynamic type-checking}, \textit{variable function arguments}, \textit{hashes}, \textit{lists}, \textit{type-based namespaces} implemented\\
 	Secured maximum points possible for the project
 }
-\vspace{2ex}\\
-\cusemph{An Integer Super-Scalar MIPS-R10K based Processor Simulator}
-\\
-\supervisor{Course : Computer Architecture $|$ Supervisor : Prof. Mainak Chaudhuri}\timeline{Jan '15 - Apr '15}
-
+\end{project}
+\begin{project}
+\title{An Integer Super-Scalar MIPS-R10K based Processor Simulator}
+\supervisor{Course : Computer Architecture $|$ Supervisor : Prof. Mainak Chaudhuri}
+\duration{Jan '15 - Apr '15}
+\description{
+	Implemented an MIPS integer-instructions-only superscalar processor simulator based on the architecture of MIPS R10K\\
+	Out-of-order scheduling, multiple issue/commit supported\\
+	Configurable parameters supported such as number of instructions fetched, decoded, issued every cycle, number of functional units, branch-prediction algorithm, RAS and BTB size, active-list size et cetera\\
+	Performed experiments on a number of benchmarks to measure performance gains with respect to in-order processor designs, as well as different parameter configurations
+}
+\end{project}
 \sectionline
 %-------------------------------------------------------------------------------
 
@@ -225,13 +221,13 @@ Academic Excellence Award 2013-14, IIT Kanpur
 %	COMPUTER SKILLS SECTION
 %-------------------------------------------------------------------------------
 \section{Computer\\Skills}
-
 \cusemph{Languages}: C, C++, Python, Assembly (x86, MIPS), Bash, Verilog, VHDL, \LaTeX.
 \\
-\cusemph{SAT/SMT Solvers}: MathSAT, Z3 
+\cusemph{SAT/SMT Solvers}: MathSAT, Z3, Yices
 \\
 \cusemph{Research Tools}: CBMC (Expert), KLEE, CSeq
-\\
+
+
 \sectionline
 %-------------------------------------------------------------------------------
 

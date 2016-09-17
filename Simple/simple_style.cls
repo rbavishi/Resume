@@ -180,7 +180,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{res}[2000/05/19 v1.4b Resume class]
+\ProvidesClass{simple_style}[2000/05/19 v1.4b Resume class]
 
 %\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 %\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
@@ -221,6 +221,7 @@
 \definecolor{lightgray}{HTML}{595959}
 \definecolor{midgray}{HTML}{393939}
 \definecolor{darkgray}{HTML}{292929}
+\definecolor{verydarkgray}{HTML}{191919}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % prints a centered name with the address centered
@@ -499,7 +500,7 @@
 			\end{tabular}}}}
 
 \renewcommand{\arraystretch}{1.15}
-\def\@descriptionbox#1{\textcolor{darkgray}{
+\def\@descriptionbox#1{\textcolor{verydarkgray}{
 			\taburulecolor{lightestgray}	
 			\hspace{1ex}
 			\begin{tabu} to \sectionwidth {p{\textwidth-3ex}}
@@ -515,9 +516,10 @@
 \def\emailtwo#1{\def\@emailtwo{\href{mailto:#1}{#1}}}
 \def\website#1#2{\def\@website{\href{#1}{#2}}}
 \def\phone#1{\def\@phone{#1}}
-\def\timeline#1{\hfill\textcolor{lightgray}{\textit{#1}}}
-\def\supervisor#1{\hfill\textcolor{midgray}{\textit{#1}}}
-\def\cusemph#1{\textcolor{midgray}{\textbf{#1}}}
+\def\cusemph#1{\textcolor{darkgray}{\textbf{#1}}}
+\def\timeline#1{\hfill\textcolor{midgray}{\textit{#1}}}
+\def\supervisor#1{\textcolor{midgray}{\textit{#1}}}
+\def\duration#1{\hfill\textcolor{midgray}{\textit{#1}}}
 \def\describe#1{\small\@descriptionbox{#1}}
 
 \def\@name{}
@@ -680,6 +682,20 @@
 	      \@append{\noexpand\\}\to\tabular@head
 	    \skotfi
 	    \let\\=\end@line@tail}}{}
+
+\newenvironment{project}{
+  \renewcommand{\title}[1]{\def\projtitle{##1}}
+  \renewcommand{\supervisor}[1]{\def\projsupervisor{##1}}
+  \renewcommand{\duration}[1]{\def\projduration{##1}}
+  \renewcommand{\description}[1]{\def\projdesc{##1}}
+}{
+	\cusemph{\projtitle}\\
+	\textcolor{darkgray}{\textit{\projsupervisor}}
+	\hfill\textcolor{darkgray}{\textit{\projduration}}
+	\vspace{1ex}\\
+	\small\@descriptionbox{\projdesc}
+	\vspace{2ex}\\
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %taken from page 378 of TeXbook but freely hacked
