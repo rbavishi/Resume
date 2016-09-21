@@ -71,6 +71,7 @@
 \emailone{rbavishi@iitk.ac.in}
 \emailtwo{rohan.bavishi95@gmail.com}
 \website{http://home.iitk.ac.in/~rbavishi}{\url{home.iitk.ac.in/~rbavishi}}
+\github{https://github.com/rbavishi}{\url{github.com/rbavishi}}
 \phone{+91-73-180-18920}
 
 \address{C-324, Hall-1\\IIT Kanpur\\Kanpur, Uttar Pradesh, India}
@@ -83,7 +84,7 @@
 %-------------------------------------------------------------------------------
 \section{Education}
 \cusemph{Indian Institute of Technology Kanpur}, Uttar Pradesh, India\\
-{\sl Bachelor of Technology}, Computer Science and Engineering, \timeline{Jul' 13 - Jul' 17}\\
+{\sl Bachelor of Technology}, Computer Science and Engineering, \timeline{Jul' 13 - Jul' 17 (Expected)}\\
 \cusemph{GPA: 9.7/10} (Overall)\\
 \sectionline
 %-------------------------------------------------------------------------------
@@ -108,53 +109,54 @@ Program Analysis and Verification, Automated Debugging and Synthesis, \\Compiler
 %       AWARDS & ACHIEVEMENTS	
 %-------------------------------------------------------------------------------
 \section{Awards \& Achievements}
-Awarded the \cusemph{SIGPLAN PAC Scholarship} of \$1500 for paper presentation at \cusemph{OOPSLA '16}\\
+Awarded the \cusemph{SIGPLAN PAC Scholarship} for paper presentation at \cusemph{OOPSLA '16}\\
 \cusemph{Academic Excellence Award 2013-14}, IIT Kanpur\\
 Secured an \cusemph{All-India-Rank of 202} in JEE Advanced 2013 amongst 150,000 candidates\\
 Secured an \cusemph{All-India-Rank of 175} in JEE Mains 2013 amongst 20,00,000 candidates\\
-Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
+Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad
+
 \sectionline
 %-------------------------------------------------------------------------------
 
 \section{Research\\Projects}
 \begin{project}
-  \title{New Strategy for analysis of Concurrent Programs via Sequentialization}
+  \title{New Strategy for Analysis of Concurrent Programs via Sequentialization}
   \supervisor{Supervisor : Prof. Subhajit Roy}
   \duration{Aug '16 - Present}
   \description{
-	Working with \href{http://users.ecs.soton.ac.uk/gp4/cseq/cseq.html}{CSeq} for code-to-code translation of concurrent into equivalent sequential programs\\
-	Devising solving strategies to reduce verification time on existing backends\\
-  }
+	- Using \href{http://users.ecs.soton.ac.uk/gp4/cseq/cseq.html}{CSeq} for code-to-code translation of concurrent programs into equivalent sequential ones\\
+	- Devising solving strategies to reduce verification time on existing backends like \href{}{CBMC}\\
+  } 
 \end{project}
 \begin{project}
-  \title{Improving Bug Localization Using Interpolant-Based Proofs (Publication)}
+  \title{Improving Bug Localization Using Interpolant-Based Proofs}
   \supervisor{Supervisor : Prof. Subhajit Roy}
   \duration{Jul '15 - Aug '16}
   \description{
-	A new method to improve quality of bug localizations for a set of given passing and failing test-cases\\
-	Interpolants are constructed from passing tests to derive \emph{soft} roadblocks which discourage localizations which violate these interpolants\\
-	Improvements upto 45\% achieved in the quality of localizations in terms of developer effort involved\\
-	\emph{Paper accepted in OOPSLA, one of the premier peer-reviewed conferences in Programming Languages}
+	- Devised a new method to improve the quality of bug localizations, in terms of reduced superfluous program locations, for a given set of passing and failing test-cases\\
+	- Interpolants are constructed from passing tests to derive \emph{soft} roadblocks. These roadblocks then discourage localizations violating these interpolants, thereby improving bug localization quality\\
+	- Upto 45\% improvement in localization quality as compared to the state-of-the-art tool BugAssist.\\
+	- \emph{Paper accepted in OOPSLA, one of the premier peer-reviewed conferences in Programming Languages}
   }
 \end{project}
 \begin{project}
   \title{Using SAT/QBF-Solvers to Detect Side-Channel Vulnerabilities in Hardware}
   \supervisor{Supervisors : Prof. Paolo Ienne and Mr. Andrew Becker}
-  \duration{May '16 - Jul '16}
+  \duration{May '16 - Present}
   \description{
-	Summer Internship Project at Processor Architecture Laboratory, EPFL, Switzerland\\
-	Studied various side-channel attacks, their mitigation techniques, and formal verification methods to prove their effectiveness\\
-	Developed a QBF-Encoding to verify if a cryptographic circuit is secure against a popular side-channel attack based on fault-injection\\
-	In the process of writing a paper and submitting to a peer-reviewed conference\\
+	- Summer internship project at the Processor Architecture Laboratory, EPFL, Switzerland\\
+	- Studied various side-channel attacks, mitigation techniques and their proofs of effectiveness using formal methods\\
+	- Developed a QBF-Encoding technique to verify whether a cryptographic circuit is secure against a popular side-channel attack based on fault-injection\\
+	- In the process of writing a paper and submitting to a peer-reviewed conference\\
   }
 \end{project}\newpage
 \begin{project}
-  \title{A CBMC-based Implementation of DirectFix}
+  \title{Implementation of DirectFix in CBMC}
   \supervisor{Supervisor : Prof. Subhajit Roy}
   \duration{May '15 - Jul '15}
   \description{
-	Ported the algorithm used in \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} to CBMC\\
-	Tried to reproduce the experimental results provided in the paper, and devise further optimizations\\
+	- Ported the described \emph{Component-Based-Synthesis} algorithm in \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} to CBMC\\
+	- Reproduced the experimental results provided in the paper, and devised further optimizations\\
   }
 \end{project}
 \sectionline
@@ -170,9 +172,9 @@ Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 \supervisor{Supervisor : Prof. Surender Baswana}
 \duration{Aug '14 - Nov '14}
 \description{
-	Re-invented a two-pass \textit{deterministic} algorithm to find median of large data-sets (approx. 1 TB)\\
-	The algorithm developed was similar to the original \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson (1980)\\
-	Carried out extensive tests to evaluate the performance of the algorithm
+	- Re-invented a two-pass \textit{deterministic} algorithm to find the median of large data-sets (approx. 1 TB)\\
+	- The algorithm developed was similar to the one described in the \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson (1980)\\
+	- Carried out extensive tests to evaluate the performance of the algorithm
 }
 \end{project}
 \begin{project}
@@ -180,10 +182,10 @@ Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 \supervisor{Supervisor : Prof. Subhajit Roy}
 \duration{Aug '13 - Nov '13}
 \description{
-	A linux application for backing-up and syncing of files between two or more peers\\
-	Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices\\
-	Linux inotify API used to track changes in the shared folder and rsync used to sync the modifications to ensure efficient transfer\\
-	Multithreading with mutexes used to parallelize syncing and file-monitoring operations
+	- A linux application for backing-up and syncing files between two or more peers\\
+	- Users have a shared folder across different machines, with local copies. Changes made in any one copy are synced across all devices\\
+	- Linux \emph{inotify} API used to track changes in the shared folder and \emph{rsync} used to sync the modifications to ensure efficient transfer\\
+	- Multithreading with mutexes used to parallelize syncing and file-monitoring operations
 }
 \end{project}
 \sectionline
@@ -194,24 +196,23 @@ Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 %-------------------------------------------------------------------------------
 \section{Course\\Projects}
 \begin{project}
-\title{An End-to-End Compiler for Perl-like Language}
+\title{End-to-End Compiler for Perl-like Language}
 \supervisor{Course : Compilers $|$ Supervisor : Prof. Subhajit Roy}
 \duration{Jan '15 - Apr '15}
 \description{
-	Built an end-to-end compiler that takes a subset of the Perl language and outputs MIPS assembly\\
-	Features such as \textit{operator overloading}, \textit{dynamic type-checking}, \textit{variable function arguments}, \textit{hashes}, \textit{lists}, \textit{type-based namespaces} implemented\\
-	Secured maximum points possible for the project
+	- Built an end-to-end compiler that takes a subset of the Perl language and outputs MIPS assembly\\
+	- Implemented Features such as \textit{operator overloading}, \textit{dynamic type-checking}, \textit{variable function arguments}, \textit{hashes}, \textit{lists}, \textit{type-based namespaces} etc.
 }
 \end{project}
 \begin{project}
-\title{An Integer Super-Scalar MIPS-R10K based Processor Simulator}
+\title{Integer Superscalar Processor Simulator based on MIPS-R10K}
 \supervisor{Course : Computer Architecture $|$ Supervisor : Prof. Mainak Chaudhuri}
 \duration{Jan '15 - Apr '15}
 \description{
-	Implemented an MIPS integer-instructions-only superscalar processor simulator based on the architecture of MIPS R10K\\
-	Out-of-order scheduling, multiple issue/commit supported\\
-	Configurable parameters supported such as number of instructions fetched, decoded, issued every cycle, number of functional units, branch-prediction algorithm, RAS and BTB size, active-list size et cetera\\
-	Performed experiments on a number of benchmarks to measure performance gains with respect to in-order processor designs, as well as different parameter configurations
+	- Implemented a superscalar processor simulator based on the MIPS R10K architecture with support for integer instructions only\\
+	- Implemented support for Out-of-Order execution, multiple instruction issue and commit, precise interrupts and branch-misprediction rollback\\
+	- Configurable parameters supported such as issue width, number of functional units, branch-prediction algorithm, RAS/BTB size, active-list size etc.\\
+	- Performed experiments on various synthesized benchmarks to measure performance gains over an in-order processor design. Repeated the experiment with varying parameter configurations
 }
 \end{project}
 \sectionline
@@ -221,11 +222,11 @@ Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 %	COMPUTER SKILLS SECTION
 %-------------------------------------------------------------------------------
 \section{Computer\\Skills}
-\cusemph{Languages}: C, C++, Python, Assembly (x86, MIPS), Bash, Verilog, VHDL, \LaTeX.
+\cusemph{Languages}: C, C++, Python, Bash, Verilog, \LaTeX, Assembly (x86, MIPS)
 \\
 \cusemph{SAT/SMT Solvers}: MathSAT, Z3, Yices
 \\
-\cusemph{Research Tools}: CBMC (Expert), KLEE, CSeq
+\cusemph{Research Tools}: CBMC (Proficient), KLEE, CSeq
 
 
 \sectionline
@@ -235,8 +236,8 @@ Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad\\
 %	Interests
 %-------------------------------------------------------------------------------
 \section{Extra Interests}
-\cusemph{Project Euler}: Solved : 257/Something \textit{(India Rank : 11)}\\
-\cusemph{Programming Hobbies}: Competitive Programming, CTF, Open Source
+\cusemph{Project Euler}: Solved : 257/560 \textit{(India Rank : 11)}\\
+\cusemph{Hobbies}: Competitive Programming, CTF \& Wargames, Quizzing
 %-------------------------------------------------------------------------------
 \end{resume}
 \end{document}

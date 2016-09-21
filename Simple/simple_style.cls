@@ -215,7 +215,8 @@
 \usepackage{calc}
 \usepackage{tabu}
 
-\definecolor{colorlink}{HTML}{006699}
+%\definecolor{colorlink}{HTML}{006699}
+\definecolor{colorlink}{HTML}{2F5BC6}
 \definecolor{lightestgray}{HTML}{A9A9A9}
 \definecolor{lightergray}{HTML}{626262}
 \definecolor{lightgray}{HTML}{595959}
@@ -232,11 +233,12 @@
   \@ifundefined{@addressone}{%
     % do nothing
   }{
-	  \vspace{-14ex}
+	  \vspace{-16ex}
 	  \leavevmode\hbox to 
 	  \textwidth{\hfil\@detailsbox{\@addressone\\
 			               \@emailone\ $|$ \@emailtwo\\
-				       \@website\\
+				       Webpage : \@website\\
+				       Github : \@github\\
 				       \@phone\\\\}}\par
   }%
   % Add a horizontal line after name
@@ -499,13 +501,13 @@
 				#1
 			\end{tabular}}}}
 
-\renewcommand{\arraystretch}{1.15}
 \def\@descriptionbox#1{\textcolor{verydarkgray}{
 			\taburulecolor{lightestgray}	
-			\hspace{1ex}
+			\hspace{0.5ex}
+			{\tabulinesep=0.8mm
 			\begin{tabu} to \sectionwidth {p{\textwidth-3ex}}
 				#1
-			\end{tabu}}}
+			\end{tabu}}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % use this to define your name
@@ -515,6 +517,7 @@
 \def\emailone#1{\def\@emailone{\href{mailto:#1}{#1}}}
 \def\emailtwo#1{\def\@emailtwo{\href{mailto:#1}{#1}}}
 \def\website#1#2{\def\@website{\href{#1}{#2}}}
+\def\github#1#2{\def\@github{\href{#1}{#2}}}
 \def\phone#1{\def\@phone{#1}}
 \def\cusemph#1{\textcolor{darkgray}{\textbf{#1}}}
 \def\timeline#1{\hfill\textcolor{midgray}{\textit{#1}}}
@@ -527,6 +530,7 @@
 \def\@emailone{}
 \def\@emailtwo{}
 \def\@website{}
+\def\@github{}
 \def\@phone{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
