@@ -216,7 +216,7 @@
 \usepackage{tabu}
 
 %\definecolor{colorlink}{HTML}{006699}
-\definecolor{colorlink}{HTML}{2F5BC6}
+\definecolor{colorlink}{HTML}{224191}
 \definecolor{lightestgray}{HTML}{A9A9A9}
 \definecolor{lightergray}{HTML}{626262}
 \definecolor{lightgray}{HTML}{595959}
@@ -694,7 +694,7 @@
   \renewcommand{\description}[1]{\def\projdesc{##1}}
 }{
 	\cusemph{\projtitle}\\
-	\textcolor{darkgray}{\textit{\projsupervisor}}
+	\textcolor{darkgray}{\textit{\projsupervisor}} 
 	\hfill\textcolor{darkgray}{\textit{\projduration}}
 	\vspace{1ex}\\
 	\small\@descriptionbox{\projdesc}
