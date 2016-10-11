@@ -30,6 +30,8 @@
 % Changes for LaTeX2e -- Venkat Krishnamurthy (Aug 7, 2001)
 %
 % Changes for general improvement -- Daniel Marks (Feb 28, 2015)
+%
+% Further changes -- Rohan Bavishi (Sep 20, 2016)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
