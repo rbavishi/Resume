@@ -1,4 +1,10 @@
-###Git repository for Resume - LaTeX formatting
+### Resume ###
+
+#### Simple Style (Current) ####
+
+* Based on the simple theme by Michael DeCorte
+
+#### Old Style ####
 
 * Fonts used - Lato and Raleway
 
